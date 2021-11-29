@@ -80,7 +80,7 @@ func TestRouterForNonExistentRoute(t *testing.T) {
 func TestStaticFileServer(t *testing.T) {
 	r := newRouter()
 	mockServer := httptest.NewServer(r)
-	resp, err := http.Get(mockServer.URL + "/assets/")
+	resp, err := http.Get(mockServer.URL + "/docs/")
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -10,9 +10,9 @@ import (
 func newRouter() *mux.Router {
 	r := mux.NewRouter()
 	r.HandleFunc("/hello", handler).Methods("GET")
-	staticFileDirectory := http.Dir("./assets/")
-	staticFileHandler := http.StripPrefix("/assets/", http.FileServer(staticFileDirectory))
-	r.PathPrefix("/assets/").Handler(staticFileHandler).Methods("GET")
+	staticFileDirectory := http.Dir("./docs/")
+	staticFileHandler := http.StripPrefix("/docs/", http.FileServer(staticFileDirectory))
+	r.PathPrefix("/docs/").Handler(staticFileHandler).Methods("GET")
 	return r
 }
 
