@@ -6,7 +6,10 @@
 *.dylib
 
 # Test binary, built with `go test -c`
-*.test
+*_.test
+
+# Test binary, built with `go test ./...`
+*_test.go
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
