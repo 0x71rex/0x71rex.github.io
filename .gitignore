@@ -1,18 +1,52 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Compiled Python files
+__pycache__/
+*.pyc
 
-# Test binary, built with `go test -c`
-*_.test
+# Byte-compiled / optimized / DLL files
+*.pyo
+__pycache__/
+*.pyc
+*.pyd
+*.db
+*.sqlite3
+*.log
 
-# Test binary, built with `go test ./...`
-*_test.go
+# Caches and logs
+logs/
+*.log
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Virtual environment
+venv/
+.env
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Ignore media files (uploads)
+media/
+*.bak
+*.log
+
+# Ignore database dump files
+db.sqlite3
+
+# Ignore development settings file
+settings.py
+
+# Ignore environment variables file
+.env
+
+# Ignore local settings
+local_settings.py
+
+# Ignore all migration files except __init__.py
+**/migrations/*
+!**/migrations/__init__.py
+
+# Ignore secret key
+*.key
+
+# Ignore system files and folders
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+__pycache__/
+venv/
