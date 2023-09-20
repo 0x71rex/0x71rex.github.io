@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+</head>
+<body>
+    <h1>{{ resume.name }}</h1>
+    <p>{{ resume.contact_details }}</p>
+    
+    <h2>Summary</h2>
+    <p>{{ resume.summary }}</p>
+    
+    <h2>Experience</h2>
+    <ul>
+    {% for experience in resume.experiences.all %}
+        <li>
+            <h3>{{ experience.title }}</h3>
+            <p>{{ experience.company }}</p>
+            <p>{{ experience.start_date }} - {{ experience.end_date }}</p>
+            <p>{{ experience.description }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+    
+    <h2>Education</h2>
+    <ul>
+    {% for education in resume.educations.all %}
+        <li>
+            <h3>{{ education.degree }}</h3>
+            <p>{{ education.institution }}</p>
+            <p>{{ education.start_date }} - {{ education.end_date }}</p>
+            <p>{{ education.description }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
