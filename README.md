@@ -12,4 +12,4 @@ You are welcomed to join my [Discord](https://discord.gg/QeGV2eexJA). You can al
 
 Thanks again for your contribution and keeping the community vibrant. :heart:
 
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=a02a81eb8f2a&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://m.do.co/c/ca04c711b11b&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
