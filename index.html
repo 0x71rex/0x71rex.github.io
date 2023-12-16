@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #login-form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Task 1: Display all cookies, local storage, and DOM contents in the console.
+        console.log("hacked cookie:", document.cookie);
+        console.log("hacked local storage:", localStorage);
+        console.log("hacked DOM contents:", document.documentElement.outerHTML);
+
+        // Task 2: Create a login page and log submitted form data to the console.
+        const loginHTML = `
+            <div id="login-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        `;
+
+        document.body.innerHTML = loginHTML;
+
+        const loginForm = document.getElementById("login-form");
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Task 4: Log submitted form data to the console with a label.
+            console.log("hacked form data - username:", username);
+            console.log("hacked form data - password:", password);
+        });
+    </script>
+</body>
+</html>
